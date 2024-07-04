@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
-<head>
-    <meta charset="UTF-8">
-    
-    <title>Document</title>
-    
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="h-full">
 
-    <ul>
-
-<div class="min-h-full">
-<?php require('partials/nav.php')?>
-<?php require('partials/banner.php')?>
+<?php require(__DIR__.'/../partials/head.php')?>
+<?php require(__DIR__.'/../partials/nav.php')?>
+<?php require(__DIR__.'/../partials/banner.php')?>
 
  
   <main>
@@ -34,4 +22,4 @@
 
 </div>
   </main>
-<?php require('partials/footer.php')?>
+<?php require(__DIR__.'/../partials/footer.php')?>

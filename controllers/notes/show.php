@@ -8,7 +8,7 @@ $note=$db->query('select *from notes where id=:id',['id'=>$_GET['id']])->findOrF
 
 $currentUserId=1;
 authorize($note['user_id']===$currentUserId);
-
-
-
- require "views/note.view.php";
+view("notes/show.view.php",[
+    'heading'=>'My Note',
+    'notes'=>$note
+  ]);
